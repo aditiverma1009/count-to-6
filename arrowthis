@@ -1,0 +1,11 @@
+function tester() {
+  const foot = {
+    kick() {
+      this.yelp = 'Ouch!';
+      setImmediate(() => this.yelp);
+    },
+  };
+  foot.kick();
+}
+
+module.exports = tester;
